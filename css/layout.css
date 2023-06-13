@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Simonetta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#logo{
+    font-family: 'Neuton', serif;
+    font-weight: 600;
+    line-height: 50px;
+}
+body{
+    font-family: 'SUITE-Regular';
+    font-size: 16px;
+}
+.inner{
+    width: 1300px;
+    margin: 0 auto;
+}
+.inner_in{
+    position: absolute;
+}
+
+.header{
+    display: flex;
+    width: 1300px;
+    margin: 20px auto;
+    color: white;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    font-weight: lighter;
+    padding-left: 30px;
+}
+nav .nav1, nav .nav2{
+    display: flex;
+}
+
+nav ul li{
+    padding-left: 30px;
+}
+
+/* header 끝 */
+
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    min-width: 1600px;
+}
+
+/* main 끝 */
+
+#best{
+    padding: 150px 0;
+}
+h2{
+    font-family: 'Neuton', serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+#best .con{
+    display: flex;
+    justify-content: space-between;
+}
+#best .item{
+    overflow: hidden;
+    position: relative;
+    margin: 0 20px;
+}
+#best .item:hover img:not(.bg){
+    transform: scale(1.1);
+}
+#best .item img{
+    transition: all 1.5s;
+    width: 100%;
+}
+
+#best .item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.5rem;
+    font-family: 'Simonetta', cursive;
+    color: #fff;
+    text-align: center;
+    
+}
+
+#best .item .bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* #best 끝 */
+
+#txt{
+    margin: 150px 0;
+    position: relative;
+}
+.txt_in{
+    text-align: center;
+    font-size: 5rem;
+    line-height: 1.5;
+    color: #618072;
+    font-family: 'Simonetta', cursive;
+}
+#txt .img{
+    width: 450px;
+    position: relative;
+   
+}
+#txt .img img{
+    width: 100%;
+    position: absolute;
+    bottom: -150px;
+    left: 100%;
+    
+}
+#txt .btn{
+    text-align: center;
+    margin-top: 150px;
+}
+#txt .btn a{
+    background-color: #618072;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 50px;
+}
+#txt .btn a:hover{
+    border: 1px solid #618072;
+    background-color: white;
+    color: #618072;
+}
+
+/* txt 끝 */
+
+#new{
+    height: 100%;
+    background-color: #f7f8f8;
+    padding-bottom: 100px;
+
+}
+#new h2{
+    text-align: left;
+    padding-bottom: 0;
+    padding: 60px 50px;
+}
+
+#new .con2{
+    padding-bottom: 120px;
+}
+#new .con2 .item{
+    width: 180px;
+    height: 370px;
+    padding-bottom: 40px;
+    box-sizing: content-box;
+    position: relative;
+}
+#new .con2 .item img{
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto  ;
+}
+#new p{
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0px;
+    left:0;
+    width: 100%;
+}
+#new .swiper-scrollbar{
+    width: 100%;
+    height: 2px;
+    background-color: #618072;
+    opacity: 0.7;
+    z-index: 99;
+}
+#new .btn{
+    text-align: right;
+    padding-top: 50px;
+}
+
+/* #new 끝 */
+
+#gift{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#gift .img{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../images/img_lf.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#gift .content{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #081f1e;
+}
+#gift .con_wrap{
+    width: 100%;
+}
+#gift .content_in{
+    display: flex;
+    max-width: 800px;
+    margin: 0  auto;
+    justify-content: space-between;
+    padding-top: 50px;
+    position: relative;
+}
+#gift .content_in .con{
+    width: 400px;
+    color: white;
+}
+#gift .con_img{
+    margin-bottom: 20px;
+    height: 340px;
+}
+
+#gift .con_img img{
+    height: 300px;
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+#gift .txt{
+    margin-left: 50px;
+    width: 90%;
+    position: relative;
+}
+#gift .txt a{
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+}
+#gift h3, #collect h3{
+    font-size: 4rem;
+    color: #618072;
+    font-family: 'Simonetta', cursive;
+    font-weight: lighter;
+    line-height: 1;
+    text-align: justify;
+    margin-bottom: 20px
+}
+#gift p, #collect p{
+    color: #fff;
+    text-align: left;
+    line-height: 1.5;
+}
+#gift .txt span, #collect span{
+    color: #98cc74;
+    font-size: 1.5rem;
+    line-height: 3;
+}
+
+#gift .content_in p{
+    text-align: center;
+}
+#gift .btn>div{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    color: #618072;
+    cursor: pointer;
+}
+
+#gift .btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#gift .btn .prev{
+    margin: 0 20px;
+}
+
+#gift .btn>div:hover{
+    background-color: #618072;
+    color: white;
+}
+
+
+/* #gift 끝 */
+
+#collect{
+    height: 100vh;
+    flex-wrap: wrap;
+}
+#collect .content{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  
+}
+#collect .left{
+    width: 50%;
+    height: 100vh;
+    background-color: #081f1e;
+}
+#collect .con_wrap{
+    padding: 70px;
+}
+
+#collect .left h3{
+    padding-bottom: 50px;
+}
+
+#collect .right{
+    width: 50%;
+    position: relative;
+}
+#collect .right .bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#collect .btn{
+    margin-top: 100px;
+}
+#collect .btn a{
+    background-color: #618072;
+    border: 1px solid #618072;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+#collect .btn a:hover{
+    background-color: #081f1e;
+    border: 1px solid white;
+    color: white;
+}
+
+/* collect 끝 */
+
+#store{
+    padding: 150px;
+}
+#store .con{
+    display: flex;
+    justify-content: space-between;
+}
+
+#store .item{
+    margin: 0 30px;
+}
+
+
+#store .item_img{
+    position: relative;
+    border-radius: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+#store .item_img:hover img:not(.bg){
+    transform: scale(1.1);
+}
+#store .item img{
+    transition: all 1.5s;
+    width: 100%;
+    
+}
+#store .item .p1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.5rem;
+    font-family: 'Simonetta', cursive;
+    color: #fff;
+    text-align: center;
+    
+}
+#store span{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 50px 0 20px 0;
+    display: block;
+}
+#store .item p{
+    text-align: center;
+}
+
+#store .btn{
+    text-align: center;
+    padding-top: 100px;
+
+}
+#store .btn a{
+    background-color: #618072;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+}
+#store .btn a:hover{
+    border: 1px solid #618072;
+    background-color: white;
+    color: #618072;
+}
+
+/* store */
+footer{
+    background-color: #081f1e;
+    color: white;
+    height: 400px;
+}
+
+footer h5{
+    font-family: 'Neuton', serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 70px 0;
+}
+
+footer .txt{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+footer .txt p{
+    line-height: 1.5;
+}
+
+footer .right{
+    display: flex;
+    padding-top: 70px;
+}
+footer .right ul{
+    padding-left: 50px;
+}
+.right ul li:first-child{
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+.right ul li{
+    line-height: 1.5;
+}
